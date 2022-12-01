@@ -19,7 +19,7 @@ function modeLoaded(){
 function gotPoses(results){
     if(results.length > 0){
         console.log(results)
-        rightWristX = results[0].pose.rightWirst.x 
+        rightWristX = results[0].pose.rightWrist.x 
         leftWristX = results[0].pose.leftWrist.x
         difference = Math.floor(leftWristX - rightWristX)
         console.log(" rightWristX " + rightWristX + " leftWristX " + leftWristX + "difference" + difference)
